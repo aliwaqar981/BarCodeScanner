@@ -5,24 +5,15 @@
  * @format
  * @flow strict-local
  */
+
+/* React Imports */
 import 'react-native-gesture-handler';
-import React, {Component, useEffect, useState} from 'react';
+import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import {StyleSheet} from 'react-native';
 
-import {
-  SafeAreaView,
-  ScrollView,
-  AppRegistry,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  Linking,
-  StatusBar,
-} from 'react-native';
-
-import {Colors} from 'react-native/Libraries/NewAppScreen';
-
+/* Customer Files and Components */
 import {QRScanner, Home, ProductDetail} from './src/Screens';
 
 const Stack = createStackNavigator();

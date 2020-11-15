@@ -1,3 +1,4 @@
+/* React Imports */
 import React, {useEffect, useState} from 'react';
 import {
   ActivityIndicator,
@@ -8,15 +9,19 @@ import {
   ScrollView,
   FlatList,
 } from 'react-native';
-import {styles} from './style';
-import {AppStyles, Colors} from '../../Theme';
+
+/* External Components */
 import {Image, ListItem} from 'react-native-elements';
-import {fetchProductDetails} from '../../Backend/api';
-// import ImageSlider from 'react-native-image-slider';
 import Carousel from 'react-native-snap-carousel';
-import EmptyContainer from './EmptyContainer';
 import {width} from 'react-native-dimension';
 
+/* Customer Files and Components */
+import {styles} from './style';
+import {AppStyles, Colors} from '../../Theme';
+import EmptyContainer from './EmptyContainer';
+
+/* Api Calls */
+import {fetchProductDetails} from '../../Backend/api';
 const ProductDetail = ({route}) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [productInfo, setProductInfo] = useState('');

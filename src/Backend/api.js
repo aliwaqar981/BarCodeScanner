@@ -1,3 +1,4 @@
+// Fetch Product Details
 export const fetchProductDetails = (barCode, onSuccess) => {
   var myHeaders = new Headers();
   myHeaders.append(

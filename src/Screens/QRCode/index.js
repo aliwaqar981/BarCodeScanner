@@ -13,12 +13,7 @@ const QRScanner = ({navigation}) => {
 
   const onSuccess = (e) => {
     setStatusText('Okay Got it');
-    console.log('See console', e);
-    // alert(e.data);
     navigation.navigate('ProductDetail', {barCode: e.data});
-    // Linking.openURL(e.data).catch((err) =>
-    //   console.error('An error occured', err),
-    // );
   };
 
   return (

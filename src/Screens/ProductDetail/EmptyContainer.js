@@ -1,7 +1,12 @@
+/* React Imports */
 import React from 'react';
 import {View, ActivityIndicator} from 'react-native';
+/* External Components */
 import {Image} from 'react-native-elements';
+
+/* External Files */
 import {styles} from './style';
+
 const EmptyContainer = () => {
   return (
     <View style={styles.emptyContainer}>
